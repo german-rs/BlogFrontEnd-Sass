@@ -1,0 +1,26 @@
+.popular{
+    width: 705px;
+}
+
+.popular__articles{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.popular__title{
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.popular-post__img{
+    width: 298px;
+    height: 200px;
+    border-radius: 20px;
+}
+
+.popular-post__title{
+    font-size: 20px;
+    font-weight: 700;
+}
