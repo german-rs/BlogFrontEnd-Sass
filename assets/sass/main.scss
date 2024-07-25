@@ -11,6 +11,8 @@
 @import "layout/main";
 @import "layout/footer";
 @import "layout/container";
+@import "layout/related";
+@import "layout/suscription";
 
 //Components.
 @import "components/new";
@@ -18,6 +20,10 @@
 @import "components/popular";
 @import "components/category";
 @import "components/date";
-@import "components/post-author";
+@import "components/separator";
+@import "components/post";
+@import "components/publication";
+@import "components/buttons";
+@import "components/inputs";
 
 //pages.

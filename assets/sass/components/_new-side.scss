@@ -1,25 +1,15 @@
-.new__side{
+.side__articles{
     margin-top: 40px;
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
+//Pendiente: article__post--side
 .new-side__post{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     gap: 20px;
-}
-
-.side-post__img{
-    width: 190px;
-    height: auto;
-    border-radius: 20px;
-}
-
-.post-body__title{
-    font-size: 20px;
-    font-weight: 700;
 }
