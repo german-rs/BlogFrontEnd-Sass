@@ -5,30 +5,22 @@
     flex-wrap: wrap;
     background-color: $color-Asparagus;
     border-radius: 20px;
-}
 
-.suscription__form {
-    width: 500px;
-    padding: 1em 0;
-}
-
-.suscription__form--button {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.suscription__text {
-    padding: 1em 0;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-.suscription-form__title {
-    color: $color-light;
-    font-size: 32px;
-    font-weight: 500;
+    &__form {
+        width: 500px;
+        padding: 1em 0;
+    }
+    
+    &__form--button {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    
+    &__title {
+        color: $color-light;
+        font-size: 32px;
+        font-weight: 500;
+    }
 }

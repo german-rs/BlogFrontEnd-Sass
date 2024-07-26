@@ -28,10 +28,17 @@
 <body>
     <!-- Header. -->
     <header class="header container">
-        <div class="header__brand">
-            <img class="header-brand__img" src="./assets/img/logos/adl.png" alt="logo Desafío Latam">
-            <a class="header-brand__text" href="#">Blog FrontEnd</a>
+        <div class="brand">
+            <img class="brand__img" src="./assets/img/logos/adl.png" alt="logo Desafío Latam">
+            <a class="brand__text" href="#">Blog FrontEnd</a>
         </div>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="./registro.html">Registro</a></li>
+                <li><a href="./login.html">Login</a></li>
+            </ul>
+        </nav>
     </header>
 
     <div class="separator container">
@@ -50,9 +57,9 @@
                     <p class="date__text">24 Noviembre, 2022</p>
                 </div>
                 <h3 class="post__title--new">Modifica el tema de Bootstrap con variables CSS</h3>
-                <div class="post__author">
-                    <img class="author__image--new" src="./assets/img/logos/adl.png" alt="logo del autor">
-                    <p class="author__text--new">Desafío Latam</p>
+                <div class="author">
+                    <img class="author__image--big" src="./assets/img/logos/adl.png" alt="logo del autor">
+                    <p class="author__text--big">Desafío Latam</p>
                 </div>
             </article>
         </section>
@@ -60,14 +67,14 @@
         <aside class="side__articles">
 
             <!-- Article 1. -->
-            <article class="new-side__post">
+            <article class="side__post">
                 <img class="post__image--side" src="./assets/img/posts/Herencia-JS.png" alt="Herencia en JavaScript">
                 <div class="post__information">
                     <div class="post__date">
                         <p class="date__text">24 Noviembre, 2022</p>
                     </div>
                     <h3 class="post__title">Herencia en JavaScript</h3>
-                    <div class="post__author">
+                    <div class="author">
                         <img class="author__image" src="./assets/img/logos/adl.png" alt="Logo del autor">
                         <p class="author__text">Desafío Latam</p>
                     </div>
@@ -75,7 +82,7 @@
             </article>
 
             <!-- Article 2. -->
-            <article class="new-side__post">
+            <article class="side__post">
                 <img class="post__image--side" src="./assets/img/posts/Etiquetas-semanticas-HTML.png"
                     alt="Etiquetas semánticas HTML">
                 <div class="post__information">
@@ -83,7 +90,7 @@
                         <p class="date__text">24 Noviembre, 2022</p>
                     </div>
                     <h3 class="post__title">Etiquetas semánticas</h3>
-                    <div class="post__author">
+                    <div class="author">
                         <img class="author__image" src="./assets/img/logos/adl.png" alt="Logo del autor">
                         <p class="author__text">Desafío Latam</p>
                     </div>
@@ -91,14 +98,14 @@
             </article>
 
             <!-- Article 3. -->
-            <article class="new-side__post">
+            <article class="side__post">
                 <img class="post__image--side" src="./assets/img/posts/reactComponents.png" alt="Componentes de React">
                 <div class="post__information">
                     <div class="post__date">
                         <p class="date__text">24 Noviembre, 2022</p>
                     </div>
                     <h3 class="post__title">Componentes de React</h3>
-                    <div class="post__author">
+                    <div class="author">
                         <img class="author__image" src="./assets/img/logos/adl.png" alt="Logo del autor">
                         <p class="author__text">Desafío Latam</p>
                     </div>
@@ -129,7 +136,7 @@
                             <p class="date__text">24 Noviembre, 2022</p>
                         </div>
                         <h3 class="post__title">Componentes de VueJS</h3>
-                        <div class="post__author">
+                        <div class="author">
                             <img class="author__image" src="./assets/img/logos/adl.png" alt="Logo del autor">
                             <p class="author__text">Desafío Latam</p>
                         </div>
@@ -145,7 +152,7 @@
                             <p class="date__text">24 Noviembre, 2022</p>
                         </div>
                         <h3 class="post__title">Consumo de API con JS</h3>
-                        <div class="post__author">
+                        <div class="author">
                             <img class="author__image" src="./assets/img/logos/adl.png" alt="Logo del autor">
                             <p class="author__text">Desafío Latam</p>
                         </div>
@@ -160,7 +167,7 @@
                             <p class="date__text">24 Noviembre, 2022</p>
                         </div>
                         <h3 class="post__title">CSS reutilizable con Sass</h3>
-                        <div class="post__author">
+                        <div class="author">
                             <img class="author__image" src="./assets/img/logos/adl.png" alt="Logo del autor">
                             <p class="author__text">Desafío Latam</p>
                         </div>
@@ -175,7 +182,7 @@
                             <p class="date__text">24 Noviembre, 2022</p>
                         </div>
                         <h3 class="post__title">Componentes de Bootstrap</h3>
-                        <div class="post__author">
+                        <div class="author">
                             <img class="author__image" src="./assets/img/logos/adl.png" alt="Logo del autor">
                             <p class="author__text">Desafío Latam</p>
                         </div>
@@ -188,28 +195,28 @@
             <h2 class="category__title">Categorias</h2>
 
             <div class="category__item category__item--html">
-                <img class="category-item__img" src="./assets/img/logos/html.png" alt="Logo HTML5">
-                <p class="category-item__text">HTML</p>
+                <img src="./assets/img/logos/html.png" alt="Logo HTML5">
+                <p>HTML</p>
             </div>
             <div class="category__item category__item--js">
-                <img class="category-item__img" src="./assets/img/logos/js.png" alt="Logo JavaScript">
-                <p class="category-item__text">JavaScript</p>
+                <img src="./assets/img/logos/js.png" alt="Logo JavaScript">
+                <p>JavaScript</p>
             </div>
             <div class="category__item category__item--css">
-                <img class="category-item__img" src="./assets/img/logos/css.png" alt="Logo CSS3">
-                <p class="category-item__text">CSS</p>
+                <img src="./assets/img/logos/css.png" alt="Logo CSS3">
+                <p>CSS</p>
             </div>
             <div class="category__item category__item--react">
-                <img class="category-item__img" src="./assets/img/logos/react.png" alt="Logo React">
-                <p class="category-item__text">React</p>
+                <img src="./assets/img/logos/react.png" alt="Logo React">
+                <p>React</p>
             </div>
             <div class="category__item category__item--vue">
-                <img class="category-item__img" src="./assets/img/logos/vue.png" alt="Logo Vue">
-                <p class="category-item__text">Vue</p>
+                <img src="./assets/img/logos/vue.png" alt="Logo Vue">
+                <p>Vue</p>
             </div>
             <div class="category__item category__item--bootstrap">
-                <img class="category-item__img" src="./assets/img/logos/bootstrap-logo.png" alt="Logo Bootstrap">
-                <p class="category-item__text">Bootstrap</p>
+                <img src="./assets/img/logos/bootstrap-logo.png" alt="Logo Bootstrap">
+                <p>Bootstrap</p>
             </div>
             <p class="category__text">Ver todas las categorias > </p>
         </aside>
@@ -220,13 +227,14 @@
         <hr class="separator__line">
     </div>
 
+    <!-- Suscription. -->
     <section class="suscription container">
         <div class="suscription__form">
-            <label class="suscription-form__title">Mantente actualizado sobre el Desarrollo Front End</label>
-            <input class="suscription-form__input" type="email" name="" id="">
+            <label class="suscription__title">Mantente actualizado sobre el Desarrollo Front End</label>
+            <input class="suscription__input" type="email" name="" id="">
         </div>
         <div class="suscription__form suscription__form--button">
-            <button class="suscription-form__button" type="button">Suscríbete</button>
+            <button class="button__suscription" type="button">Suscríbete</button>
         </div>
     </section>
 
@@ -234,10 +242,11 @@
         <hr class="separator__line">
     </div>
 
+    <!-- Footer. -->
     <footer class="footer container">
-        <div class="footer__brand">
-            <img class="footer-brand__img" src="./assets/img/logos/adl.png" alt="Logo Desafío Latam">
-            <a class="footer-brand__text" href="#">Blog FrontEnd </a>
+        <div class="brand">
+            <img class="brand__img" src="./assets/img/logos/adl.png" alt="Logo Desafío Latam">
+            <a class="brand__text" href="#">Blog FrontEnd </a>
         </div>
         <p class="footer__text">Desafío Latam - 2024</p>
     </footer>

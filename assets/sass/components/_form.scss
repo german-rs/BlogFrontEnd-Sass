@@ -1,0 +1,29 @@
+.form__box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1em 0;
+
+    &--button{
+        padding: 0.5em 0;
+    }
+}
+
+.form__label{
+    font-size: 18px;
+}
+
+.form__text{
+    font-size: 18px;
+
+    &--link{
+        text-decoration: none;
+        color: $color-texts;
+    }
+    
+    &--register{
+        text-decoration: none;
+        color: $color-texts;
+        font-weight: 600;
+    }
+}

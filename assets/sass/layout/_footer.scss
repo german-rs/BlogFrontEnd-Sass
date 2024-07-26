@@ -5,30 +5,10 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-}
 
-.footer__text{
-    font-size: 20px;
-    font-weight: 400;
-    padding: 0.5em 0;
-}
-
-.footer__brand{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 1em 0;
-    gap: 10px;
-}
-
-.footer-brand__img{
-    width: 55px;
-    border-radius: 15px;
-}
-
-.footer-brand__text{
-    font-size: 24px;
-    font-weight: 700;
-    text-decoration: none;
-    color: $color-texts
+    &__text{
+        font-size: 20px;
+        font-weight: 400;
+        padding: 0.5em 0;
+    }
 }

@@ -1,7 +1,7 @@
 .separator{
     padding: 1em 0;
-}
 
-.separator__line{
-    border: 1px solid $color-line-separator;
+    &__line{
+        border: 1px solid $color-line-separator;
+    }
 }

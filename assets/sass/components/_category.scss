@@ -2,58 +2,58 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
-}
 
-.category__title {
-    font-size: 28px;
-    font-weight: 700;
-}
+    &__title {
+        font-size: 28px;
+        font-weight: 700;
+    }
 
-.category__text{
-    font-size: 20px;
-    font-weight: 400;
-}
+    &__text {
+        font-size: 20px;
+        font-weight: 400;
+    }
 
-.category__item {
-    width: 300px;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-}
+    &__item {
+        width: 300px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
 
-.category-item__img {
-    width: 85px;
-    height: 74px;
-}
+        img {
+            width: 85px;
+            height: 74px;
+        }
 
-.category-item__text {
-    color: $color-text-category;
-    font-size: 32px;
-    font-weight: 700;
-}
+        p {
+            color: $color-text-category;
+            font-size: 32px;
+            font-weight: 700;
+        }
 
-.category__item--html {
-    background-color: $color-vermilion;
-}
+        &--html {
+            background-color: $color-vermilion;
+        }
 
-.category__item--js {
-    background-color: $color-aureolin;
-}
+        &--js {
+            background-color: $color-aureolin;
+        }
 
-.category__item--css {
-    background-color: $color-celestial-blue;
-}
+        &--css {
+            background-color: $color-celestial-blue;
+        }
 
-.category__item--react {
-    background-color: $color-gunmetal;
-}
+        &--react {
+            background-color: $color-gunmetal;
+        }
 
-.category__item--vue {
-    background-color: $color-mantis;
-}
+        &--vue {
+            background-color: $color-mantis;
+        }
 
-.category__item--bootstrap {
-    background-color: $color-eminence;
+        &--bootstrap {
+            background-color: $color-eminence;
+        }
+    }
 }

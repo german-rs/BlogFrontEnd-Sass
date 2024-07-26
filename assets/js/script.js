@@ -6,8 +6,14 @@
     Enlace del repositorio: https://github.com/german-rs/BlogFrontEnd-Sass
 */
 
-function redirectToPage() {
+function redirectToPageDetail() {
     window.location.href = './detalle.html';
 }
+document.querySelector('.new__article').addEventListener('click', redirectToPageDetail);
 
-document.querySelector('.new').addEventListener('click', redirectToPage);
+
+function sendHome(){
+    window.location.href = './index.html';
+}
+
+
