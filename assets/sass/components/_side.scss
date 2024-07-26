@@ -1,12 +1,11 @@
-.side__articles{
+.side__articles {
     margin-top: 40px;
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-//Pendiente: article__post--side
-.new-side__post{
+.side__post {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;

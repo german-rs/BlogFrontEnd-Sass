@@ -1,0 +1,79 @@
+<!-- 
+    Nombre estudiante: Germán A. Riveros Sepúlveda.
+    Generación: 14.
+    Jornada: Vespertina.   
+    Desafío: Blog FrontEnd con Sass.
+    Enlace del repositorio: https://github.com/german-rs/BlogFrontEnd-Sass
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon. -->
+    <link rel="shortcut icon" href="./assets/img/logos/adl.png" type="image/x-icon">
+
+    <!-- Etiquetas meta -->
+    <meta name="author" content="Germán Riveros S.">
+    <meta name="description" content="Blog FrontEnd">
+    <meta name="keywords" content="Programación, código, JavaScript, HTML5, VueJS, CSS, Bootstrap, React, blog">
+
+    <link rel="stylesheet" href="./assets/css/main.css">
+
+    <title>Login | Blog Front End </title>
+</head>
+
+<body>
+    <!-- Header. -->
+    <header class="header container">
+        <div class="brand">
+            <img class="brand__img" src="./assets/img/logos/adl.png" alt="logo Desafío Latam">
+            <a class="brand__text" href="./index.html">Blog FrontEnd</a>
+        </div>
+    </header>
+
+    <div class="separator container">
+        <hr class="separator__line">
+    </div>
+
+    <!-- Login form. -->
+    <main class="login container">
+
+        <section class="login__section">
+            <h2 class="form__title">Bienvenido</h2>
+            <div>
+                <input class="input__field" type="email" placeholder="Email">
+            </div>
+            <div>
+                <input class="input__field" type="password" placeholder="Contraseña">
+            </div>
+            <div class="form__box">
+                <div>
+                    <input class="input__check" type="checkbox" name="Recordarme" id="">
+                    <label class="form__label" for="">Recordarme</label>
+                </div>
+                <a class="form__text form__text--link" href="#">¿Olvidaste tu contraseña?</a>
+            </div>
+            <div class="form__box--button">
+                <button class="button__regular" onclick="sendHome()" type="button">Iniciar sesión</button>
+            </div>
+            <div class="form__box--button">
+                <button class="button__regular button__regular--google" type="button">
+                    <img class="button__image" src="./assets/img/logos/logo-google-button.png" alt="Logo de Google">
+                    <span>Inicia sesión con Google</span>
+                </button>
+            </div>
+            <div>
+                <p class="form__text">¿No tienes una cuenta? <a class="form__text--register"
+                        href="./registro.html">Regístrate</a></p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- JS local. -->
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>

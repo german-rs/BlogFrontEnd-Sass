@@ -1,15 +1,15 @@
 .popular{
     width: 705px;
-}
 
-.popular__title{
-    font-size: 28px;
-    font-weight: 700;
-}
-
-.popular__articles{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 20px;
+    &__title{
+        font-size: 28px;
+        font-weight: 700;
+    }
+    
+    &__articles{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
 }

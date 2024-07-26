@@ -6,24 +6,29 @@
 @import "base/base";
 
 //Layout.
-@import "layout/header";
-@import "layout/news";
-@import "layout/main";
 @import "layout/footer";
-@import "layout/container";
+@import "layout/header";
+@import "layout/login";
+@import "layout/main";
+@import "layout/news";
 @import "layout/related";
 @import "layout/suscription";
+@import "layout/container";
 
 //Components.
-@import "components/new";
-@import "components/new-side";
-@import "components/popular";
+@import "components/author";
+@import "components/brand";
+@import "components/buttons";
 @import "components/category";
 @import "components/date";
-@import "components/separator";
+@import "components/form";
+@import "components/inputs";
+@import "components/navbar";
+@import "components/new";
+@import "components/popular";
 @import "components/post";
 @import "components/publication";
-@import "components/buttons";
-@import "components/inputs";
+@import "components/separator";
+@import "components/side";
 
 //pages.
