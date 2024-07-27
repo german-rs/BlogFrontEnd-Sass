@@ -1,11 +1,9 @@
 .category {
-    display: flex;
-    flex-direction: column;
+    @include flexbox(column, null, null);
     gap: 30px;
 
     &__title {
-        font-size: 28px;
-        font-weight: 700;
+        @include text-title(28px, 700);
     }
 
     &__text {
@@ -16,10 +14,7 @@
     &__item {
         width: 300px;
         border-radius: 10px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-around;
+        @include flexbox(row, space-around, center);
 
         img {
             width: 85px;
@@ -28,32 +23,18 @@
 
         p {
             color: $color-text-category;
-            font-size: 32px;
-            font-weight: 700;
+            @include text-title(32px, 700);
         }
 
-        &--html {
-            background-color: $color-vermilion;
+        $language: "html", "js", "css", "react", "vue", "bootstrap";
+        $color: $color-vermilion, $color-aureolin, $color-celestial-blue, 
+        $color-gunmetal, $color-mantis, $color-eminence;
+
+        @each $lan, $col in zip($language, $color){
+            &--#{$lan}{
+                background-color: $col;
+            }
         }
 
-        &--js {
-            background-color: $color-aureolin;
-        }
-
-        &--css {
-            background-color: $color-celestial-blue;
-        }
-
-        &--react {
-            background-color: $color-gunmetal;
-        }
-
-        &--vue {
-            background-color: $color-mantis;
-        }
-
-        &--bootstrap {
-            background-color: $color-eminence;
-        }
     }
 }

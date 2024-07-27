@@ -1,19 +1,14 @@
 .publication{
-    display: flex;
-    flex-direction: column;
+    @include flexbox(column, null, null);
     gap: 1em;
     padding: 2em 0;
 
     &__title{
-        font-size: 28px;
-        font-weight: 700;
+        @include text-title(28px, 700);
     }
     
     &__information{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: center;
+        @include flexbox(row, null, center, wrap);
         gap: 3em;
     }
     
@@ -21,15 +16,14 @@
         background-color: $color-white-smoke;
         border-radius: 20px;
         padding: 2em;
-        display: flex;
-        flex-direction: column;
+        @include flexbox(column, null, null);
         gap: 2em;
 
         img{
             width: 100%;
             max-width: 600px;
             height: auto;
-            border-radius: 20px;
+            border-radius: $image-border-radius;
             align-self: center;
         }
     }

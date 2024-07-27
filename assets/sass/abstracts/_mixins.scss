@@ -1,0 +1,12 @@
+@mixin flexbox($direction: row, $justify: space-between, $align: center,$wrapper: wrap) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    flex-wrap: $wrapper;
+}
+
+@mixin text-title($size: 28px, $weight: 700){
+    font-size: $size;
+    font-weight: $weight;
+}

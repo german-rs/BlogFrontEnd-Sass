@@ -1,8 +1,5 @@
 .suscription {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    @include flexbox(row, space-evenly, wrap);
     background-color: $color-Asparagus;
     border-radius: 20px;
 
@@ -12,15 +9,11 @@
     }
     
     &__form--button {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        align-items: center;
+        @include flexbox(column, flex-end, center);
     }
     
     &__title {
+        @include text-title(32px, 500);
         color: $color-light;
-        font-size: 32px;
-        font-weight: 500;
     }
 }

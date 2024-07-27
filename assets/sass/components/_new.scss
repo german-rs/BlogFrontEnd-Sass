@@ -1,8 +1,7 @@
-.new__article{
+.new__article {
     cursor: pointer;
-}
 
-.new__title{
-    font-size: 28px;
-    font-weight: 700;
+    .new__title {
+        @include text-title(28px, 700);
+    }
 }

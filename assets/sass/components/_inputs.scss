@@ -1,21 +1,26 @@
+$input-radius: 10px;
+$input-font-size: 1em;
+$input-margin: 10px 0;
+
 .suscription__input {
     width: 100%;
     height: 50px;
     border: none;
-    border-radius: 10px;
-    font-size: 1em;
+    border-radius: $input-radius;
+    font-size: $input-font-size;
     font-family: $font-family;
-    margin: 10px 0;
+    margin: $input-margin;
 }
 
 .input__field {
     width: 100%;
     height: 40px;
+    padding-left: 10px;
     border: 2px solid $color-white-smoke;
-    border-radius: 10px;
-    font-size: 1em;
+    border-radius: $input-radius;
+    font-size: $input-font-size;
     font-family: $font-family;
-    margin: 10px 0;
+    margin: $input-margin;
 }
 
 .input__check {
