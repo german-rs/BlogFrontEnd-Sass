@@ -2,14 +2,11 @@
     width: 705px;
 
     &__title{
-        font-size: 28px;
-        font-weight: 700;
+        @include text-title(28px, 700);
     }
     
     &__articles{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+        @include flexbox(row, null, null, wrap);
         gap: 20px;
     }
 }

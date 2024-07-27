@@ -1,13 +1,11 @@
+$padding-vertical: 1em 0;
+
 .related__title{
-    font-size: 28px;
-    font-weight: 700;
-    padding: 1em 0;
+    @include text-title(28px, 700);
+    padding: $padding-vertical;
 }
 
 .related__articles{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 1em 0;
+    @include flexbox(row, space-between, wrap);
+    padding: $padding-vertical;
 }

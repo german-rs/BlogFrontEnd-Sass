@@ -8,41 +8,75 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- Favicon. -->
-        <link rel="shortcut icon" href="./assets/img/logos/adl.png" type="image/x-icon">
+    <!-- Favicon. -->
+    <link rel="shortcut icon" href="./assets/img/logos/adl.png" type="image/x-icon">
 
-        <!-- Etiquetas meta -->
-        <meta name="author" content="Germán Riveros S.">
-        <meta name="description" content="Blog FrontEnd">
-        <meta name="keywords" content="Programación, código, JavaScript, HTML5, VueJS, CSS, Bootstrap, React, blog">
-    
-        <link rel="stylesheet" href="./assets/css/main.css">
+    <!-- Etiquetas meta -->
+    <meta name="author" content="Germán Riveros S.">
+    <meta name="description" content="Blog FrontEnd">
+    <meta name="keywords" content="Programación, código, JavaScript, HTML5, VueJS, CSS, Bootstrap, React, blog">
+
+    <link rel="stylesheet" href="./assets/css/main.css">
 
     <title> Registro | Blog FrontEnd </title>
 </head>
+
 <body>
-        <!-- Header. -->
-        <header class="header container">
-            <div class="brand">
-                <img class="brand__img" src="./assets/img/logos/adl.png" alt="logo Desafío Latam">
-                <a class="brand__text" href="./index.html">Blog FrontEnd</a>
-            </div>
-        </header>
-    
-        <div class="separator container">
-            <hr class="separator__line">
+    <!-- Header. -->
+    <header class="header container">
+        <div class="brand">
+            <img class="brand__img" src="./assets/img/logos/adl.png" alt="logo Desafío Latam">
+            <a class="brand__text" href="./index.html">Blog FrontEnd</a>
         </div>
-    
-        <!-- Register form. -->
-        <main class="form container">
+    </header>
+
+    <div class="separator container">
+        <hr class="separator__line">
+    </div>
+
+    <!-- Register form. -->
+    <main class="register container">
+
+        <section class="register__section">
+
             <h2 class="form__title">Regístrate ¡Es gratis!</h2>
+            <div>
+                <input class="input__field" type="text" placeholder="Nombre">
+            </div>
+            <div>
+                <input class="input__field" type="text" placeholder="Apellido">
+            </div>
+            <div>
+                <input class="input__field" type="email" placeholder="Email">
+            </div>
+            <div>
+                <input class="input__field" type="password" placeholder="Contraseña">
+            </div>
+            <div>
+                <input class="input__field" type="password" placeholder="Confirma tu contraseña">
+            </div>
+            <div class="form__box--button">
+                <button class="button__regular" onclick="sendToLogin()" type="button">Crea tu cuenta</button>
+            </div>
+            <div class="form__box--button">
+                <button class="button__regular button__regular--google" onclick="sendToGmail()" type="button">
+                    <img class="button__image" src="./assets/img/logos/logo-google-button.png" alt="Logo de Google">
+                    <span>Regístrate con Google</span>
+                </button>
+            </div>
+            <div>
+                <p class="form__text">¿Ya tienes una cuenta? <a class="form__text--register" href="./login.html">Inicia
+                        sesión</a></p>
+            </div>
 
-            <section class="form__section">
-
-            </section>
-        </main>
+        </section>
+    </main>
+    <!-- JS local. -->
+    <script src="./assets/js/script.js"></script>
 </body>
+
 </html>

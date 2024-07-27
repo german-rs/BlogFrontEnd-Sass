@@ -1,28 +1,26 @@
 .post__image {
     width: 298px;
     height: 200px;
-    border-radius: 20px;
+    border-radius: $image-border-radius;
 
     &--side {
         width: 190px;
         height: auto;
-        border-radius: 20px;
+        border-radius: $image-border-radius;
     }
 
     &--new {
         width: 100%;
         max-width: 600px;
         height: auto;
-        border-radius: 20px;
+        border-radius: $image-border-radius;
     }
 }
 
 .post__title {
-    font-size: 20px;
-    font-weight: 700;
+    @include text-title(20px, 700);
 
     &--new {
-        font-size: 24px;
-        font-weight: 700;
+        @include text-title(24px, 700);
     }
 }

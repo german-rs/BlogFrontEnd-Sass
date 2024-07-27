@@ -1,14 +1,10 @@
 .side__articles {
+    @include flexbox(column, null, null);
     margin-top: 40px;
-    display: flex;
-    flex-direction: column;
     gap: 10px;
-}
 
-.side__post {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 20px;
+    .side__post {
+        @include flexbox(row, null, center, wrap);
+        gap: 20px;
+    }
 }

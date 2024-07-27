@@ -1,7 +1,11 @@
+$size: 18px;
+
+.form__title{
+    @include text-title(28px, 400);
+}
+
 .form__box{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    @include flexbox(row, space-between);
     padding: 1em 0;
 
     &--button{
@@ -10,11 +14,11 @@
 }
 
 .form__label{
-    font-size: 18px;
+    font-size: $size;
 }
 
 .form__text{
-    font-size: 18px;
+    font-size: $size;
 
     &--link{
         text-decoration: none;
